@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+include modules/head
+body
+    .error.d-flex.flex-column.justify-content-center
+        .error-hero
+            .title
+                p 404
+                .text
+                    p Uh-oh! nothing found
+        form.error-form.d-flex(action="")
+            input.w-100(type="text" name="search-error" placeholder="Type any keyword")
+            button.flex-shrink(type="submit") Search
+        .error-footer
+            strong Sorry!
+            p The page you are looking for does not exist or another error occurred
+            a(href="/index.html")
+                i.fas.fa-home
+                span Go back home
+script(src="js/scripts.min.js")

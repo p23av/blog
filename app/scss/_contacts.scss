@@ -1,0 +1,107 @@
+@import "vars";
+
+.contacts {
+  padding-top: 100px;
+  padding-bottom: 112px;
+  article {
+    .box-sticky {
+      position: sticky;
+      top: 75px;
+    }
+    .info {
+      margin-bottom: 30px;
+      &-img {
+        width: 434px;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: left;
+        }
+      }
+      &-text {
+        width: 706px;
+        padding: 0 30px;
+        background-color: #fff;
+        &-title {
+          max-width: 377px;
+          border-bottom: 1px solid #eaeaeb;
+          h3 {
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: 1.2px;
+            color: #424242;
+            margin-top: 37px;
+            margin-bottom: 30px;
+          }
+        }
+        &-p {
+          margin-top: 30px;
+          p {
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            letter-spacing: 0.17px;
+          }
+        }
+        &-address {
+          margin-top: 30px;
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              margin: 0 0 17px;
+              padding: 0;
+              list-style-type: none;
+              a {
+                color: #424242;
+                font-size: 14px;
+                font-weight: 400;
+                letter-spacing: 0.17px;
+                line-height: 24px;
+                span {
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .contacts-form {
+      .form-item {
+        margin-bottom: 20px;
+        input {
+          height: 50px;
+          box-shadow: 1px 1px 1px rgba(234, 234, 235, 0.75);
+          width: 100%;
+          border: none;
+          text-transform: uppercase;
+          padding: 20px;
+        }
+        textarea {
+          width: 100%;
+          border: none;
+          resize: none;
+          text-transform: uppercase;
+          padding: 20px;
+          height: 100%;
+        }
+      }
+      .form-button {
+        button {
+          height: 40px;
+          background-color: #212429;
+          padding: 0 40px;
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 12px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+}

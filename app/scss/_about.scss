@@ -1,0 +1,50 @@
+.about {
+  padding: 100px 0;
+  .about-content {
+    background-color: #fff;
+    &-img {
+      height: 490px;
+      background-color: #3a3c49;
+      position: relative;
+      &-link {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 51px;
+        height: 44px;
+        background-color: #cc2127;
+        text-align: center;
+        i {
+          color: #fff;
+          font-size: 26px;
+          line-height: 44px;
+          font-weight: 300;
+        }
+      }
+    }
+    .item {
+      margin-top: 0;
+      &.item-about_image {
+        .item-header-icon {
+          background-image: url(/img/icon-image.png);
+          background-position: center;
+          background-repeat: no-repeat;
+        }
+      }
+      &-date {
+        i, span {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+      &-content {
+        padding: 0 60px;
+        .center {
+          padding: 0 200px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

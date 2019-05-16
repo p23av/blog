@@ -1,0 +1,77 @@
+.error {
+  height: 100vh;
+  width: 770px;
+  margin: 0 auto;
+  text-align: center;
+  &-hero {
+    position: relative;
+    .title {
+      color: #363636;
+      position: relative;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 300px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 4.16px;
+      display: inline-block;
+      p {
+        display: inline-block;
+      }
+      .text {
+        background-color: #fff;
+        position: absolute;
+        height: 30px;
+        left: 0;
+        width: 100%;
+        color: #212121;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: 14.24px;
+      }
+    }
+  }
+  &-form {
+    width: 100%;
+    height: 50px;
+    margin-top: 57px;
+    margin-bottom: 38px;
+    input {
+      padding-left: 24px;
+      border: 1px solid #cccccc;
+    }
+    button {
+      text-transform: uppercase;
+      background-color: $mainColor;
+      color: #ffffff;
+      padding: 0 55px;
+      border: none;
+    }
+  }
+  &-footer {
+    strong {
+      font-size: 30px;
+      font-family: 'Montserrat', sans-serif;
+      letter-spacing: 0.36px;
+      color: #363636;
+      font-weight: 700;
+    }
+    p {
+      color: #999;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 25px;
+    }
+    a {
+      color: #363636;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-family: 'Montserrat', sans-serif;
+      i {
+        color: #999999;
+        margin-right: 10px;
+      }
+    }
+  }
+}

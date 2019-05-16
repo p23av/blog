@@ -1,0 +1,140 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+@import "header";
+@import "slider";
+@import "subscribe";
+@import "masonry";
+@import "footer";
+@import "contacts";
+@import "aside";
+@import "about";
+@import "error";
+@import "detail";
+
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+img {
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.black-box {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	z-index: -1;
+	&.active {
+		z-index: 50;
+		background-color: rgba(0, 0, 0, .8);
+		opacity: 1;
+	}
+	.container-wrapper {
+		height: 100%;
+		position: relative;
+		.black-box-close {
+			position: absolute;
+			top: 80px;
+			right: 15px;
+			color: #ffffff;
+			cursor: pointer;
+			.close {
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				position: relative;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: #fff;
+					transform: rotate(-45deg);
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 100%;
+					height: 2px;
+					background-color: #fff;
+					transform: rotate(45deg);
+				}
+			}
+			.text {
+				font-family: $title-font;
+				font-size: 24px;
+			}
+		}
+	}
+}
+html {
+	overflow: inherit !important;
+}
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	//overflow-x: hidden;
+	overflow: inherit !important;
+	color: $text;
+	background-color: #f9f9fb;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+button, a {
+	&:focus {
+		user-select: none;
+		outline: 0;
+	}
+}
+.container-wrapper {
+	max-width: 1560px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+
+@import "media"; // Always at the end

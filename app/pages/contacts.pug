@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+include modules/head
+body
+    include  modules/black-box
+    include modules/header
+    section
+        .container-wrapper
+            .contacts
+                .row
+                    article.col-lg-9
+                        .box-sticky
+                            .info.d-flex
+                                .info-img
+                                    img(src="/img/info-map.png")
+                                .info-text
+                                    .info-text-title
+                                        h3  Contact information
+                                    .info-text-p
+                                        p In case you some aquestions popped in your’s mind, FeIn case you some aquestions popped in your’el email or even visit us.
+                                    .info-text-address
+                                        ul
+                                            li
+                                                a(href="#")
+                                                    i.fas.fa-home
+                                                    span Address: 123 Street Name, City Name, United States.
+                                            li
+                                                a(href="email:info@lifestyle.com")
+                                                    i.far.fa-envelope
+                                                    span Email: info@lifestyle.com
+                                            li
+                                                a(href="www.lifestyle.com")
+                                                    i.fas.fa-globe-americas
+                                                    span www.lifestyle.com
+                            form.contacts-form.row(action="")
+                                .form-item.col-lg-6
+                                    input(type="text" name="name" placeholder="Your Name ")
+                                .form-item.col-lg-6
+                                    input(type="email" name="email" placeholder="Your Email Address")
+                                .form-item.col-lg-12
+                                    input(type="text" name="link" placeholder="Website Address")
+                                .form-item.col-lg-12
+                                    textarea(name="message" rows="9" placeholder="Please write a message here!")
+                                .form-button.col.lg-2
+                                    button(type="submit") Send message
+                    include modules/aside
+    include modules/footer
+script(src="js/scripts.min.js")

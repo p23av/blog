@@ -1,0 +1,35 @@
+header
+    .container-wrapper
+        .row
+            .header-navbar.col-lg-5.d-flex.align-items-start
+                .header-navbar-menu.d-flex.justify-content-center.align-items-center
+                    ul.header-navbar-menu-ul.d-flex.flex-column
+                        li
+                            a(href="/index.html") Home
+                        li
+                            a(href="/detail.html") Detail
+                        li
+                            a(href="/contacts.html") Contacts
+                        li
+                            a(href="/about.html") About
+                button.menu-button.d-flex.align-items-center.justify-content-center
+                    span
+            .header-logo.col-lg-2
+                a.header-logo-link(href="index.html")
+                    img.header-logo-img(src="/img/logo.png" alt="Deco Blog")
+            .header-social-link.col-lg-5.d-flex.justify-content-end
+                a(href="#")
+                    i.fas.fa-rss
+                a(href="#")
+                    i.fab.fa-twitter
+                a(href="#")
+                    i.fab.fa-tumblr
+                a(href="#")
+                    i.fab.fa-facebook-f
+                form.header-search
+                    label.header-search-label(for="header-search-i")
+                        i.fas.fa-search
+                    .header-search-wrapper.d-flex
+                        input.header-search-input(type="text" id="header-search-i")
+                        button(type="submit")
+                            i.fas.fa-search
