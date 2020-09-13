@@ -1,18 +1,18 @@
 var syntax        = 'scss', // Syntax: sass or scss;
-		gulpversion   = '4'; // Gulp version: 3 or 4
+	gulpversion   = '4'; // Gulp version: 3 or 4
 
 var gulp          = require('gulp'),
-		gutil         = require('gulp-util' ),
-		sass          = require('gulp-sass'),
-		browserSync   = require('browser-sync'),
-		concat        = require('gulp-concat'),
-		uglify        = require('gulp-uglify'),
-		cleancss      = require('gulp-clean-css'),
-		rename        = require('gulp-rename'),
-		autoprefixer  = require('gulp-autoprefixer'),
-		notify        = require('gulp-notify'),
-		pug           = require('gulp-pug'),
-		rsync         = require('gulp-rsync');
+	gutil         = require('gulp-util' ),
+	sass          = require('gulp-sass'),
+	browserSync   = require('browser-sync'),
+	concat        = require('gulp-concat'),
+	uglify        = require('gulp-uglify'),
+	cleancss      = require('gulp-clean-css'),
+	rename        = require('gulp-rename'),
+	autoprefixer  = require('gulp-autoprefixer'),
+	notify        = require('gulp-notify'),
+	pug           = require('gulp-pug'),
+	rsync         = require('gulp-rsync');
 
 gulp.task('browser-sync', function() {
 	browserSync({
